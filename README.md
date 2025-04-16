@@ -1,1 +1,1 @@
-# Trajectory_gesture_control
+# Trajectory Gesture Control
