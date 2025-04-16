@@ -1,44 +1,50 @@
-Trajectory Gesture Control
+# Trajectory Gesture Control
+
 This is a simple Python project that lets you control actions using hand-drawn gestures tracked via a webcam. The idea is to draw shapes or paths in the air, and the system recognizes them based on their trajectory.
 
-What It Does
-Tracks your hand in real-time using your webcam
+## What It Does
 
-Records the path you draw with your finger
+- Tracks your hand in real-time using your webcam  
+- Records the path you draw with your finger  
+- Compares it to saved gestures and runs actions based on matches  
+- You can add your own custom gestures
 
-Compares it to saved gestures and runs actions based on matches
+## How to Run
 
-You can add your own custom gestures
+### 1. Clone the repo
 
-How to Run
-1. Clone the repo
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/AleksandarGeorgiev2002/Trajectory_gesture_control.git
 cd Trajectory_gesture_control
-2. Install dependencies
+```
+
+### 2. Install dependencies
+
 Make sure you have Python 3.7+ and run:
 
-bash
-Copy
-Edit
+```bash
 pip install opencv-python numpy matplotlib
-3. Start the app
-bash
-Copy
-Edit
+```
+
+### 3. Start the app
+
+```bash
 python HandTrackingLogicStartEndPoint.py
-That’s it — your webcam will open, and you can start testing gestures.
+```
 
-Files
-HandTrackingLogicStartEndPoint.py: Main script to run the app
+That’s it - your webcam will open, and you can start testing gestures.
 
-HandTrackingLogicStartEndPoint_2.ipynb: Jupyter notebook version for testing/debugging
+## Files
 
-.idea/: IDE settings (can be ignored)
+- `HandTrackingLogicStartEndPoint.py`: Main script to run the app  
+- `HandTrackingLogicStartEndPoint_2.ipynb`: Jupyter notebook version for testing/debugging  
+- `.idea/`: IDE settings (can be ignored)  
 
-Notes
-You can modify the code to define your own gestures and link them to any actions you want.
+## Notes
 
-The matching is based on the trajectory/shape you draw, not on exact position.
+- You can modify the code to define your own gestures and link them to any actions you want.
+- The matching is based on the trajectory/shape you draw, not on exact position.
+
+## License
+
+MIT - do whatever you want, please give credit if you build on it.
